@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+
+    background-color: #f0f0f2;
+    font-family: 'Poppins', sans-serif;
+    color: #2a3634;
+
+}
+
+/*HEADER----------------------------------------------*/
+
+header{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header .banner{
+    /* background-color: aqua; */
+    width: 52vw;
+}
+
+header .banner img{
+    width: 100%;
+}
+
+header .menu{
+    /* background-color: blueviolet; */
+    width: 32vw;
+    margin-left: 15rem;
+    padding: 2rem;
+    font-size: 1.9rem;
+    
+
+}
+
+header .menu .title{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4rem;
+
+}
+
+header .menu h3{
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+header .menu .descricao{
+    font-weight: 300;
+    margin-bottom: 4.5rem;
+}
+
+.buttons{
+    background-color: #6bbf59;
+    width: 11rem;
+    height: 3.8rem;
+    
+
+    border-radius: .7rem;
+    border: none;
+    
+    font-weight: 600;
+    font-size: 1.6rem;
+    
+
+    transition: .3s;
+
+
+}
+
+.botoes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu .buttons{
+    color: #073b3a;
+}
+
+header .menu .botoes{
+    width: 28rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu .buttons:hover{
+    cursor: pointer;
+    background-color: #073b3a;
+    color: #6bbf59;
+
+}
+
+
+ .rodape{
+   position: relative;
+   top: 21rem;
+   font-size: 1.4rem;
+   font-weight: 300;
+}
+
+/*MAIN----------------------------------------------*/
+
+main .page.cipa, 
+main .page.sesmt{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: violet; */
+}
+
+
+
+form{
+    background-color: #c1fba4b7;
+    height: 65%;
+    width: 40vw;
+    padding: 2rem;
+
+
+    border-radius: .5rem 3rem;
+    
+}
+
+main  h2{
+    text-align: center;
+    font-size: 4rem;
+} 
+
+main  fieldset{
+    border: none;
+
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 4rem 3rem;
+}
+
+main  fieldset label{
+    margin-right: 1rem;
+}
+
+main input,
+main select{
+    vertical-align: middle;
+    border: solid .2rem #6bbf59;
+    border-radius: .3rem;
+
+    height: 2.5rem;
+    padding: .3rem;
+}
+
+main input::placeholder{
+    /* padding-left: .5rem; */
+    opacity: .5;
+}
+
+main .botoes-acao{
+    /* background-color: turquoise; */
+    width: 60%;
+    display: flex;
+    position: relative;
+    top: 5%;
+    justify-content: space-between;
+    vertical-align: middle;
+    height: 4rem;
+
+}
+
+main .botoes-acao button{
+    background-color: #073b3a;
+    color: white;
+    /* width: 11rem; */
+}
+
+main .botoes-acao button:nth-child(1){
+    background-color: #6bbf59;
+}
+
+main .botoes-acao button:hover{
+    cursor: pointer;
+}
+
+main .rodape{
+    text-align: center;
+}
+
+main .page.sesmt #information{
+    font-size: 1.4rem;
+}
+
+main .page.sesmt .botoes-acao.dois{
+   width: 70%;
+}
+
+ .voltar{
+    display: none;
+}
+
+.page.sesmt, 
+.page.cipa{
+    display: none;
+}
+
+

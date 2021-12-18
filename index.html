@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIPA & SESMT</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <section class="menu">
+            <h1 class="title">CIPA & SESMT</h1>
+            <h3 class="subtitle">Dimensionamento</h3>
+            <p class="descricao">Ajudando você a calcular <br> o dimensionamento  do SESMT e da CIPA, conforme NR's 4 e 9, respectivamente. </p>
+            
+            <div class="botoes">
+                <a href="#cipa"><div class="buttons cipa">CIPA</div></a>
+                <a href="#sesmt"><div class="buttons sesmt">SESMT</div></a>
+            </div>
+
+            <footer class="rodape"><label for="rodape">Criado por Diego Mendes</label></footer>
+        </section>
+
+        <section class="banner"><img src="images/engenheiro.svg" alt="imagem-engenheiro"></section>
+    </header>
+
+   
+
+    <main>
+        <section class="page cipa" id="cipa">
+            <form class="form" id="form1">
+                <h2 class="title" id="tcipa" >CIPA</h2>
+
+                <fieldset class="funcs">
+                    <label for="text-funcs">Número de funcionários:</label>
+                    <input type="number" name="text-funcs" id="text-funcs1" placeholder="ex: 1500">
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <label for="text-grupo">Grupo:</label>
+                   <select name="text-grupo" id="text-grupo">
+                    <option value="">Grupo</option>
+                    <option value="C-1">C-1</option>
+                    <option value="C-1a">C-1a</option>
+                    <option value="C-2">C-2</option>
+                    <option value="C-3">C-3</option>
+                    <option value="C-3">C-3a</option>
+                    <option value="C-4">C-4</option>
+                    <option value="C-5">C-5</option>
+                    <option value="C-5">C-5a</option>
+                    <option value="C-6">C-6</option>
+                    <option value="C-7">C-7</option>
+                    <option value="C-7">C-7a</option>
+                    <option value="C-8">C-8</option>
+                    <option value="C-9">C-9</option>
+                    <option value="C-10">C-10</option>
+                    <option value="C-11">C-11</option>
+                    <option value="C-12">C-12</option>
+                    <option value="C-13">C-13</option>
+                    <option value="C-14">C-14</option>
+                    <option value="C-14a">C-14a</option>
+                    <option value="C-15">C-15</option>
+                    <option value="C-16">C-16</option>
+                    <option value="C-17">C-17</option>
+                    <option value="C-18">C-18</option>
+                    <option value="C-18a">C-18a</option>
+                    <option value="C-19">C-19</option>
+                    <option value="C-20">C-20</option>
+                    <option value="C-21">C-21</option>
+                    <option value="C-22">C-22</option>
+                    <option value="C-23">C-23</option>
+                    <option value="C-24">C-24</option>
+                    <option value="C-24a">C-24a</option>
+                    <option value="C-24b">C-24b</option>
+                    <option value="C-25">C-25</option>
+                    <option value="C-26">C-26</option>
+                    <option value="C-27">C-27</option>
+                    <option value="C-28">C-28</option>
+                    <option value="C-29">C-29</option>
+                    <option value="C-30">C-30</option>
+                    <option value="C-31">C-31</option>
+                    <option value="C-32">C-32</option>
+                    <option value="C-33">C-33</option>
+                    <option value="C-34">C-34</option>
+                    <option value="C-35">C-35</option>
+                   </select>
+                </fieldset>
+
+                <fieldset class="botoes-acao">
+                    <a href="#"><button class="buttons findGroup">Meu grupo</button></a>
+
+                    <button class="buttons calcular" onclick="calculaCipa()">Calcular</button>
+
+                    <button class="buttons voltar" onclick="voltaCipa()">Voltar</button>
+                </fieldset>
+
+
+
+                <footer class="rodape"><label for="rodape">Criado por Diego Mendes</label></footer>
+            </form>
+        </section>
+
+
+        <section class="page sesmt" id="sesmt">
+            <form class="form">
+                <h2 class="title" id="tsesmt">SESMT</h2>
+
+                <fieldset class="funcs">
+                    <label for="text-funcs">Número de funcionários:</label>
+                    <input type="number" name="text-funcs" id="text-funcs2" placeholder="ex: 1500">
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <label for="text-risco">Grau de risco:</label>
+                   <select name="text-risco" id="text-risco">
+                    <option value="">Grau de risco</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                   
+                   </select>
+                </fieldset>
+
+               <fieldset class="botoes-acao dois">
+                   <p id="information">Consulte o grau de risco da sua <br> empresa pelo CNAE na NR-4</p>
+
+                    <button class="buttons calcular" onclick="calculaSesmt()">Calcular</button>
+
+                    <button class="buttons voltar" onclick="voltaSesmt()">Voltar</button>
+               </fieldset>
+
+
+                <footer class="rodape"><label for="rodape">Criado por Diego Mendes</label></footer>
+            </form>
+        </section>
+    </main>
+    
+
+
+  
+</body>
+</html>
