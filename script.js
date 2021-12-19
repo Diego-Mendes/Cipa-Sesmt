@@ -2308,33 +2308,35 @@ const dimensionaCipa = function (grupo, funcs, div) {
 }
 
  
-function calculaCipa(id){
-    const formElmentos = document.querySelectorAll('.form1 fieldset')
-//   let divResultado = document.getElementById('resultado')
-  let form = document.getElementById('form1')
-//   let resElements = document.getElementById('res')
-  let btnVoltar = document.getElementsByClassName('voltar')
-  let funcs = Number(document.getElementsByClassName('text-funcs1').value) 
-  let grupo = document.getElementById('text-grupo')
-  let grupoOption = grupo.options[grupo.selectedIndex].value
+function calculaCipa(){
+
+    alert("deu certo")
+//     const formElmentos = document.querySelector('#form1 fieldset')
+
+//   let form = document.getElementById('form1')
+//   let btnVoltar = document.getElementsByClassName('voltar')
+//   let funcs = Number(document.getElementsById('text-funcs1').value) 
+//   let grupo = document.getElementById('text-grupo')
+//   let grupoOption = grupo.options[grupo.selectedIndex].value
       
-      if(funcs < 0 || grupoOption == "" || funcs == ""){
-      alert("Valores inseridos são inválidos")
-      }
-   else{    
-    formElmentos.forEach(e => {
-      e.style.display = 'none'
-    })
-   btnVoltar.style.display = 'block'
+//       if(funcs < 0 || grupoOption == "" || funcs == ""){
+//         alert("Valores inseridos são inválidos")
+//       } else{   
+//         formElmentos.forEach(e => {
+//              e.style.display = 'none'
+//      })
+//         btnVoltar.style.display = 'block'
    
-   dimensionaCipa(grupoOption, funcs, form)
-  }
+//         dimensionaCipa(grupoOption, funcs, form)
+//         alert('deu bom')
+//   }
+
   
   }
 
 function voltaCipa(){
-  const formElmentos = document.querySelectorAll('.form1 fieldset')
-  const form = document.getElementsByClassName('form1')
+  const formElmentos = document.querySelectorAll('#form1 fieldset')
+  const form = document.getElementsById('form1')
   let btnVoltar = document.getElementsByClassName('voltar')
 
 
