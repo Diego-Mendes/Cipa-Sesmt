@@ -126,6 +126,8 @@ main .page.sesmt{
     align-items: center;
     justify-content: center;
 
+    /* display: none; */
+
     /* background-color: violet; */
 }
 
@@ -133,6 +135,8 @@ main .page.sesmt{
 
 form{
     background-color: #c1fba4b7;
+    outline: .2rem solid #08a045;
+    outline-offset: .2rem;
     height: 65%;
     width: 40vw;
     padding: 2rem;
@@ -140,6 +144,8 @@ form{
 
     border-radius: .5rem 3rem;
     
+
+   
 }
 
 main  h2{
@@ -244,4 +250,78 @@ main .page.sesmt .botoes-acao.dois{
     display: none;
 }
 
+
+@media (orientation: portrait), (max-width: 400px){
+    body{
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        align-content: center;
+        
+        overflow-x: hidden;
+    }
+
+    header{
+        
+    }
+
+    header .menu{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+
+        
+    }    
+
+    header .botoes{
+      
+        width: 60%;
+        margin: auto;
+    }
+
+    header .rodape{
+        display: none;
+    }
+
+    header .banner{
+        display: none;
+    }
+
+    main form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    main form fieldset{
+        margin: 2rem;
+        
+    }
+
+    main .botoes-acao{
+        /* background-color: aqua; */
+        width: 90%;
+        align-self: center;
+        margin-top: 5rem;
+       
+    }
+
+    .botoes-acao.dois {
+        width: 90%;
+        /*  */
+        display: flex;
+        justify-content: center;
+        /* background-color: aqua; */
+
+    
+    }
+
+    main .page.sesmt #information{
+        display: none;
+    }
+}
 
